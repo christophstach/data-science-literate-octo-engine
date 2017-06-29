@@ -1,0 +1,78 @@
+\input{config.tex}
+
+\begin{document}
+
+\chapter{Data Science - Christoph Stach}
+
+Für unser Projekt im Modul Data Science haben wir uns darauf geeinigt eine Explorative Studie den Kurznachrichtendienst Twitter zu machen.
+Dabei hatte jeder Projektteilnehmer eigene Ideen und Vorstellungen was er analsieren wollte.
+Eine genaue definition der einzelnen Ziele stand nicht von Anfang an fest und hat sich im Laufe der Projektarbeit ergeben.
+Die Datenbasis mit der jeder Projektteilnehmer arbeitet, sollte jedoch die gleiche sein und sich auf alle Tweets im Sammlungszeitraum in Berlin beziehen.
+
+\section{Erkundung}
+
+In der Erkundungsphase habe ich mich darauf Beschränkt bereits getätigte Forschungsprojekte in diesem Feld zu finden.
+Dabei habe ich ein sehr interresante Internetseite mit Forschungsergebnissen gefunden.
+\\
+\\
+\url{http://www.ling.uni-potsdam.de/~scheffler/twitter/}
+\\
+\\
+Auf Grund dieser wissenschaftlichen Arbeit hatte ich die Idee Tweets pro Wochentag und pro Stunde am Tag darzustellen.
+Außerdem wollte ich die Vorkommen von Hashtags Zählen um daraus gegebenenfalls auftretende Ergeignisse abzuleiten.
+Mein Ziel war alles möglichst dynmamisch in Form einer Internetseite in einer optisch ansprechende Form darzustellen.
+Es sollte auch möglich sein den Auswertungszeitraum selbst wählen zu können.
+
+\section{Datenbeschaffung}
+
+Twitter stellt unterschiedliche APIs\footnote{Application Programmable Interface} zur Verfügung. 
+Dazu gehören unterschiedliche REST\footnote{Representational State Transfer} APIs, Streaming APIs, Webhook APIs und eine Ads API, sowie APIs für kommerzielle Zwecke.
+\\
+\subsection{REST APIs\footnote{\url{https://dev.twitter.com/rest/public}}}
+
+Mit den REST Api können einmalige Anfragen an Twitter gesendet werden. Es handelt sich um Pull APIs.
+Es wird eine Anfrage an den Twitter Server gesendet und man bekommt sofort ein Ergebnis zurückgeliefert.
+Es lassen sich zum die Tweets einer Timeline einer Organisation oder eines Benutzers abfragen.
+Außerdem lassen sich alle Informationen zu einem Benutezer abfragen. Zusätzlich kann über diese API z.B. getweetet werden.
+\\
+\\
+Weitere detailierte Informationen findet man unter .
+
+\subsection{Streaming APIs\footnote{\url{https://dev.twitter.com/streaming/overview}}}
+
+Hierbei handelt es sich um eine andere Art von API. Eine Push API. Man verbindet sich zu dieser API und die Verbindung bleibt dauerhaft bestehen
+bis Sie vom Benutzer oder vom Twitter Server abgebrochen wird. Solange eine Verbindung besteht sendet diese APIs in Echtzeit alle auftretenden Tweets.
+Zum Zeitpunkt der Erstellung dieser Dokumentation gibt es die \emph{Public streams API}, \emph{User streams API}, \emph{Site streams API}.
+\\
+\\
+Für meine Zwecke ist die \emph{Public streams API} interresant, diese ist laut Twitter für Data mining geeinigt ist.
+
+\subsection{Webhook APIs\footnote{\url{https://dev.twitter.com/webhooks}}}
+
+Laut Twitter ist diese API beta phase und wird zukünfig die \emph{User streams API} und die \emph{Site streams API} ersetzen.
+
+\subsection{Ads API\footnote{\url{https://dev.twitter.com/ads}}}
+
+Die Ads API ist für das Verwalten und Schalten von Werbeanzeigen auf Twitter und für unsere Zwecke nicht interresant.
+
+\subsection{Entwicklung des Data Miners}
+
+
+
+\section{Datenpräparation}
+
+\section{Exploration / Modell-Planung}
+
+\section{Model-Erstellung}
+
+\section{Interpretation}
+
+\section{Veröffentlichung}
+
+
+
+\section{Operationalisierung}
+
+
+\end{document}
+
