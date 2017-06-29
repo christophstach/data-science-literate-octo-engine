@@ -57,6 +57,16 @@ Die Ads API ist für das Verwalten und Schalten von Werbeanzeigen auf Twitter un
 
 \subsection{Entwicklung des Data Miners}
 
+Der Data Miner ist der Teil des Projects, welcher für das Sammeln der Daten, der Tweets, zuständig ist.
+Für Twitter gibt es zahlreiche Bibliotheken, für verschiedene Programmiersprachen, die das Kommunizieren mit der API erleichtern. 
+Zu finden die sind diese unter folgendem Link \url{https://dev.twitter.com/resources/twitter-libraries}.
+Die Entscheidung fiel dabei auf den \emph{hbc-core}\footnote{Hosebird Client: \url{https://github.com/twitter/hbc}},
+da dieser offiziell von Twitter entwickelt und gewartet wird.
+\pagebreak
+\\
+Die Twitter API liefert dabei alle auftretenden Tweets im JSON\footnote{JavaScript Object Notation} Format\footnote{Siehe Anhang: Tweet im JSON Format}.
+\\
+Der Data Miner sammelt alle Tweets die unter innerhalb der GEO-Koordination für den Großraum Berlin auftreten\footnote{Südosten: Nordwesten:} auftreten.
 
 
 \section{Datenpräparation}
@@ -72,6 +82,11 @@ Die Ads API ist für das Verwalten und Schalten von Werbeanzeigen auf Twitter un
 
 
 \section{Operationalisierung}
+
+\section{Ahhang}
+
+\subsection{Tweet im JSON Format}
+\input{tweet.tex}
 
 
 \end{document}
